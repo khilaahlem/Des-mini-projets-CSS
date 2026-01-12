@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialNet - Réseau Social</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>SocialNet</h1>
+            </div>
+            <nav class="nav-main">
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#friends">Amis</a></li>
+                    <li><a href="#messages">Messages</a></li>
+                    <li><a href="#profile">Profil</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Rechercher...">
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+    
+        <aside class="sidebar">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="https://via.placeholder.com/120" alt="Profil">
+                </div>
+                <h3>Jean Dupont</h3>
+                <p class="bio">Développeur web passionné</p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">1.2K</span>
+                        <span class="stat-label">Amis</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">542</span>
+                        <span class="stat-label">Posts</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">8.3K</span>
+                        <span class="stat-label">Likes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h4>Suggestions</h4>
+                <div class="suggestion-item">
+                    <img src="https://via.placeholder.com/40" alt="Avatar">
+                    <div>
+                        <p class="name">Marie Martin</p>
+                        <button>Ajouter</button>
+                    </div>
+                </div>
+                <div class="suggestion-item">
+                    <img src="https://via.placeholder.com/40" alt="Avatar">
+                    <div>
+                        <p class="name">Pierre Bernard</p>
+                        <button>Ajouter</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="feed">
+            <div class="post-creator">
+                <div class="creator-header">
+                    <img src="av1.jpg" alt="Avatar">
+                    <input type="text" placeholder="À quoi pensez-vous ?">
+                </div>
+                <div class="creator-actions">
+                    <button class="btn-action">📸 Photo</button>
+                    <button class="btn-action">🎬 Vidéo</button>
+                    <button class="btn-action">😊 Sentiment</button>
+                    <button class="btn-post">Publier</button>
+                </div>
+            </div>
+
+            <article class="post">
+                <div class="post-header">
+                    <img src="av2.jpg" alt="Avatar">
+                    <div class="post-info">
+                        <p class="post-author">User 1</p>
+                        <p class="post-time">Il y a 2 heures</p>
+                    </div>
+                    <button class="menu-btn">⋯</button>
+                </div>
+
+                <div class="post-content">
+                    <p>Incroyable journée au parc ! Quelle belle météo 🌞</p>
+                    <img src="parc.jpg" alt="Post image">
+                </div>
+
+                <div class="post-stats">
+                    <span>👍 342 J'aime</span>
+                    <span>💬 56 Commentaires</span>
+                </div>
+
+                <div class="post-actions">
+                    <button class="action-btn">👍 J'aime</button>
+                    <button class="action-btn">💬 Commenter</button>
+                    <button class="action-btn">↗️ Partager</button>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <img src="av3.jpg" alt="Avatar">
+                    <div class="post-info">
+                        <p class="post-author">User 2</p>
+                        <p class="post-time">Il y a 5 heures</p>
+                    </div>
+                    <button class="menu-btn">⋯</button>
+                </div>
+
+                <div class="post-content">
+                    <p>Viens de terminer mon dernier projet ! Très heureux du résultat 💪</p>
+                </div>
+
+                <div class="post-stats">
+                    <span>👍 189 J'aime</span>
+                    <span>💬 23 Commentaires</span>
+                </div>
+
+                <div class="post-actions">
+                    <button class="action-btn">👍 J'aime</button>
+                    <button class="action-btn">💬 Commenter</button>
+                    <button class="action-btn">↗️ Partager</button>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <img src="av4.jpg" alt="Avatar">
+                    <div class="post-info">
+                        <p class="post-author">User 3</p>
+                        <p class="post-time">Il y a 1 jour</p>
+                    </div>
+                    <button class="menu-btn">⋯</button>
+                </div>
+
+                <div class="post-content">
+                    <p>Quelque chose pour tous les fans de technologie ! 🚀</p>
+                    <img src="post.jpg" alt="Post image">
+                </div>
+
+                <div class="post-stats">
+                    <span>👍 521 J'aime</span>
+                    <span>💬 87 Commentaires</span>
+                </div>
+
+                <div class="post-actions">
+                    <button class="action-btn">👍 J'aime</button>
+                    <button class="action-btn">💬 Commenter</button>
+                    <button class="action-btn">↗️ Partager</button>
+                </div>
+            </article>
+        </main>
+
+        <aside class="sidebar-right">
+            <div class="widget">
+                <h4>Tendances</h4>
+                <div class="trend-item">
+                    <p class="trend-tag">#WebDevelopment</p>
+                    <p class="trend-count">125K posts</p>
+                </div>
+                <div class="trend-item">
+                    <p class="trend-tag">#ReactJS</p>
+                    <p class="trend-count">89K posts</p>
+                </div>
+                <div class="trend-item">
+                    <p class="trend-tag">#CSS</p>
+                    <p class="trend-count">56K posts</p>
+                </div>
+                <div class="trend-item">
+                    <p class="trend-tag">#JavaScript</p>
+                    <p class="trend-count">98K posts</p>
+                </div>
+            </div>
+
+            <div class="widget">
+                <h4>Qui suivre</h4>
+                <div class="follow-item">
+                    <img src="https://via.placeholder.com/40" alt="Avatar">
+                    <div>
+                        <p class="name">David Code</p>
+                        <p class="username">@davidcode</p>
+                    </div>
+                    <button class="follow-btn">Suivre</button>
+                </div>
+                <div class="follow-item">
+                    <img src="https://via.placeholder.com/40" alt="Avatar">
+                    <div>
+                        <p class="name">Alice Dev</p>
+                        <p class="username">@alicedev</p>
+                    </div>
+                    <button class="follow-btn">Suivre</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2026 SocialNet. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

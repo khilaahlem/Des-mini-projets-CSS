@@ -1,0 +1,307 @@
+/* ============================================
+   STYLES DE BASE - Mobile First (par défaut)
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li {
+    flex: 1;
+    min-width: 100px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #667eea;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+section {
+    background: white;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+#hero h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+/* Feature Grid - Mobile: 1 colonne */
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 4px solid #667eea;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* ============================================
+   MEDIA QUERY - Tablette (à partir de 768px)
+   ============================================ */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    /* Navigation : afficher en ligne horizontale */
+    nav ul {
+        flex-wrap: nowrap;
+    }
+
+    nav li {
+        flex: 0 1 auto;
+    }
+
+    nav a {
+        padding: 20px 25px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 35px;
+    }
+
+    /* Feature Grid - Tablette: 2 colonnes */
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #hero h2 {
+        font-size: 40px;
+    }
+
+    #hero p {
+        font-size: 20px;
+    }
+}
+
+/* ============================================
+   MEDIA QUERY - Desktop (à partir de 1024px)
+   ============================================ */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 42px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    nav a {
+        padding: 20px 30px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 40px;
+    }
+
+    /* Feature Grid - Desktop: 3 colonnes */
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    #hero {
+        padding: 80px 40px;
+    }
+
+    #hero h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    #hero p {
+        font-size: 22px;
+    }
+}
+
+/* ============================================
+   MEDIA QUERY - Grand écran (à partir de 1440px)
+   ============================================ */
+@media (min-width: 1440px) {
+    main {
+        padding: 0 50px;
+    }
+
+    section {
+        padding: 50px;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .card {
+        padding: 30px;
+    }
+}
+
+/* ============================================
+   MEDIA QUERY - Très petit écran (moins de 480px)
+   ============================================ */
+@media (max-width: 479px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #hero h2 {
+        font-size: 24px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+}
+
+/* ============================================
+   MEDIA QUERY - Mode sombre (préférence utilisateur)
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+
+    section {
+        background: #2d2d2d;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .card {
+        background: #333;
+    }
+
+    nav a {
+        color: #e0e0e0;
+    }
+}
